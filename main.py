@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+import sys
+sys.path.append("./src")
+
 from gamestate import ObisTrisGameState
 from renderer import ObisTrisRenderer
 from keyboardthread import KeyboardThread
