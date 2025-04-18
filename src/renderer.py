@@ -8,13 +8,13 @@ from time import sleep
 
 class ObisTrisRenderer():
 
-    def __init__(self, com_port = "/dev/tty.usbserial-211310", device_id = 0, source_id = 14):
+    def __init__(self, com_port = "/dev/tty.usbserial-211310", device_id = 0, source_id = 14, baud_rate = 56700, crystal = 1.8432):
         self.com_port = com_port
         self.device_id = device_id
         self.source_id = source_id
 
         debug = False
-        transport = FoconSerialTransport(self.com_port, debug = debug)
+        transport = FoconSerialTransport(self.com_port, baudrate=baud_rate, xtal=crystal, debug = debug)
         bus = FoconBus(transport, self.source_id, debug = debug)
         msg_bus = FoconMessageBus(bus, self.source_id, debug = debug)
         self.device = FoconDevice(msg_bus, self.device_id)

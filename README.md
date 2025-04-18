@@ -12,7 +12,10 @@ You can pass the path to your rs-485 uart via `--port /dev/your-usb-tty`. If you
 
 ## Requirements
 
-These requirements should be installed automatically with `pipenv install`.
+These requirements should be installed automatically with `pipenv sync`.
+
+### python 3.13
+
 
 ### focon-util
 Excellent library by [@shiz@mastodon.social](https://mastodon.social/@shiz) from [RevSpace](https://revspace.nl) for controlling the Focon-branded displays used in various trains throughout Europe.

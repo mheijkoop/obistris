@@ -1,0 +1,5 @@
+-i https://pypi.org/simple
+crcmod==1.7
+foconutil @ git+https://github.com/shizmob/focon-util.git@6a17e614b762f81a80cd62bdce4335ab82f722f1
+pyserial==3.5
+sshkeyboard==2.3.1; python_version >= '3.6'

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.13
 import sys
 sys.path.append("./src")
 
@@ -31,10 +31,26 @@ parser.add_argument(
     help="target device ID"
 )
 
+parser.add_argument(
+    "-b",
+    "--baud-rate",
+    type=int,
+    default=56700,
+    help="Baud rate for serial communication (only used when overclocked)"
+)
+
+parser.add_argument(
+    "-x",
+    "--crystal",
+    type=float,
+    default=1.8432,
+    help="Crystal frequence (only used when overclocked, requires physical modification!)"
+)
+
 arguments = parser.parse_args()
 
 state = ObisTrisGameState()
-renderer = ObisTrisRenderer(com_port=arguments.port, device_id=arguments.device_id)
+renderer = ObisTrisRenderer(com_port=arguments.port, device_id=arguments.device_id, baud_rate=arguments.baud_rate, crystal=arguments.crystal)
 
 def render():
     renderer.render_state(state)

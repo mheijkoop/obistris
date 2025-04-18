@@ -4,12 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-foconutil = {git = "https://github.com/shizmob/focon-util.git"}
 crcmod = "*"
 pyserial = "*"
 sshkeyboard = "*"
+foconutil = {git = "https://github.com/shizmob/focon-util.git"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.13"
+
+[pipenv]
+allow_prereleases = true

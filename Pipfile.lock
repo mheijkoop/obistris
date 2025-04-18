@@ -28,7 +28,7 @@
         },
         "foconutil": {
             "git": "https://github.com/shizmob/focon-util.git",
-            "ref": "6605b6ff571954346ef7b90148b19d75c0be5252"
+            "ref": "6a17e614b762f81a80cd62bdce4335ab82f722f1"
         },
         "pyserial": {
             "hashes": [
