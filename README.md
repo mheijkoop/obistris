@@ -34,7 +34,7 @@ Thankfully there's [sshkeyboard](https://sshkeyboard.readthedocs.io/en/latest/),
 * We're not using the full 'width' of the display, drawing an object 32 pixels wide returns an error but 30 seems to work.
 * We're not using the full 'height' of the display, the larger the object, the slower the rendering gets, the current default setting is about the optimum for a non-overclocked display.
 * You can't see your score on the display. That'll come! I promise!
-* Right now no support for [shiz's overclocked display](https://github.com/shizmob/focon-util/blob/main/docs/ns-icmm.md#baudrate-increase) but that'll be easy to add. I'll do that asap.
+
 
 ## FAQ
 
@@ -76,3 +76,7 @@ Because I'm a woman on the internet and men have made me this way.
 ### Why the name?
 OBIS is the name of the system providing travel info in the Koploper trains.
 I'm not sure it also controls the exterior displays but it sounded nice.
+
+## AI
+No AI was used in the development of this code.
+Please don't propose pull requests written by AI.
