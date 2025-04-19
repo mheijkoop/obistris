@@ -1,6 +1,8 @@
 # Obistris
 ## A blocky game for your train
 
+![An orange-on-black LED display showing a tetris-like game. An S-shaped block is currently falling sideways.](/../static/gameplay.jpeg)
+
 ## Running
 
 You should be able to run the game with `pipenv run ./main.py`.
